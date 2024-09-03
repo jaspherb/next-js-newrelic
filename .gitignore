@@ -37,3 +37,6 @@ next-env.d.ts
 node_modules
 
 .env
+
+# new relic
+newrelic_agent.log
