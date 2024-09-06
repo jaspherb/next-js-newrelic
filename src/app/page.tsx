@@ -1,9 +1,7 @@
-'use client'
-import Data from '@/client_only/components/data'
-import { Link } from '@chakra-ui/next-js'
+'use client';
+
+import Data from '@/client_only/components/Data';
 
 export default function Page() {
-  return (
-    <Data />
-  )
+  return <Data />;
 }

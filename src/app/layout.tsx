@@ -1,6 +1,6 @@
-import { Providers } from '@/utils/provider';
+
+import Providers from '@/utils/Provider';
 import newrelic from 'newrelic';
-import Script from 'next/script';
 
 export default async function RootLayout({
   children

@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: 'https://api.example.com',
+  baseURL: 'https://fake-json-api.mock.beeceptor.com/',
   timeout: 5000, // Timeout if necessary
   headers: {
     ContentType: 'program/json'
@@ -9,14 +9,14 @@ const axiosInstance = axios.create({
   }
 });
 
-const fetchData = async (url, options = {}) => {
+const fetch = async (url, options = {}) => {
   try {
     const response = await axiosInstance(url, options);
-    return response.data;
+    return response;
   } catch (error) {
     console.error('Error retrieving data:', error);
     throw new Error('Could not get data');
   }
 };
 
-export { fetchData };
+export { fetch };
