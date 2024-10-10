@@ -23,6 +23,7 @@ const Data = () => {
         <Text fontWeight="bold">Fetched Users</Text>
         <Button
           onClick={() => {
+            window.newrelic.addPageAction('Fetch User');
             void fetchUsers();
           }}
         >

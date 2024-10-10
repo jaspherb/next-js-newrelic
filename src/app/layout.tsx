@@ -1,5 +1,5 @@
 
-import Providers from '@/utils/Provider';
+import Providers from '@/client_only/providers/providers';
 import newrelic from 'newrelic';
 
 export default async function RootLayout({

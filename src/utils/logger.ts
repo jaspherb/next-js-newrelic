@@ -1,7 +1,7 @@
-import pino from 'pino'
+import pino from 'pino';
 
 const logger = pino({
-  level: 'info'
-})
+  level: process.env.WEB_LOG_LEVEL
+});
 
-export default logger
+export default logger;
